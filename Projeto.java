@@ -11,17 +11,17 @@ public class Projeto {
         System.out.println("Digite 10 números inteiros:");
         for (int i = 0; i < 10; i++) {
             System.out.print("Número " + (i + 1) + ": ");
-            numeros[i] = scanner.nextInt(); // Lê o número digitado pelo usuário
+            numeros[i] = scanner.nextInt(); 
             soma += numeros[i]; // Soma os números para calcular a média depois
         }
         
-        scanner.close(); // Fecha o Scanner
+        scanner.close(); 
         
-        // Inicializa maior e menor com o primeiro número do array
+    
         maior = numeros[0];
         menor = numeros[0];
         
-        // Percorre o array para encontrar o maior e o menor número
+        // Encontra o maior e o menor número
         for (int i = 1; i < 10; i++) {
             if (numeros[i] > maior) {
                 maior = numeros[i];
